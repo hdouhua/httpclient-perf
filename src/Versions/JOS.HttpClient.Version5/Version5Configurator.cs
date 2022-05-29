@@ -1,5 +1,4 @@
-﻿using System;
-using JOSHttpClient.Common;
+﻿using JOSHttpClient.Common;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace JOSHttpClient.Version5
@@ -9,7 +8,8 @@ namespace JOSHttpClient.Version5
         public static void AddVersion5(this IServiceCollection services)
         {
             services.AddSingleton<GetAllProjectsQuery>();
-            services.AddHttpClient<GitHubClient>("GitHubClient.Version5", x => { x.BaseAddress = new Uri(GitHubConstants.ApiBaseUrl); });
+            services.AddHttpClient<GitHubClient>("GitHubClient.Version5", HttpClientSetting.SetDefaults)
+                .ConfigurePrimaryHttpMessageHandler(HttpClientSetting.ConfigureHandler);
             services.AddSingleton<GitHubClientFactory>();
         }
     }

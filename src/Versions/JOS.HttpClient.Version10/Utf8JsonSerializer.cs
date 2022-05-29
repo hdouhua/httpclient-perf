@@ -1,6 +1,9 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
 using Utf8Json;
+using Utf8Json.Resolvers;
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantTypeArgumentsOfMethod
 
 namespace JOSHttpClient.Version10
 {
@@ -10,7 +13,7 @@ namespace JOSHttpClient.Version10
 
         public Utf8JsonSerializer()
         {
-            _resolver = JsonSerializer.DefaultResolver;
+            _resolver = StandardResolver.CamelCase;
         }
 
         public void Serialize<T>(T response, Stream responseStream)

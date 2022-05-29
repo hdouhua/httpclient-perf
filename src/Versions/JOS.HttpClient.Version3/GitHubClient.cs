@@ -19,7 +19,7 @@ namespace JOSHttpClient.Version3
 
         public async Task<IReadOnlyCollection<GitHubRepositoryDto>> GetRepositories(CancellationToken cancellationToken)
         {
-            var httpClient = _httpClientFactory.CreateClient("GitHub");
+            var httpClient = _httpClientFactory.CreateClient("GitHub.Version3");
             var result = await httpClient.GetStringAsync(GitHubConstants.RepositoriesPath).ConfigureAwait(false);
             return JsonConvert.DeserializeObject<List<GitHubRepositoryDto>>(result);
         }
