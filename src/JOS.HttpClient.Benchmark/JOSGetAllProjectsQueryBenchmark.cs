@@ -21,7 +21,8 @@ using Microsoft.Extensions.DependencyInjection;
 namespace JOS.HttpClient.Benchmark
 {
     [MemoryDiagnoser]
-    [SimpleJob(RuntimeMoniker.NetCoreApp31, invocationCount: 50)]
+    [SimpleJob(RuntimeMoniker.NetCoreApp31, invocationCount: 50, baseline: true)]
+    [SimpleJob(RuntimeMoniker.Net60, invocationCount: 50)]
     public class JOSGetAllProjectsQueryBenchmark
     {
         private IServiceProvider _serviceProvider;
