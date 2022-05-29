@@ -9,25 +9,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Benchmark", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Common", "src\JOS.HttpClient.Common\JOS.HttpClient.Common.csproj", "{2F6B59C5-483F-43D6-8014-40354836A75A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version1", "src\versions\JOS.HttpClient.Version1\JOS.HttpClient.Version1.csproj", "{0D174800-E5BA-41F5-A509-6A16CF239B3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version1", "src\Versions\JOS.HttpClient.Version1\JOS.HttpClient.Version1.csproj", "{0D174800-E5BA-41F5-A509-6A16CF239B3B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version2", "src\versions\JOS.HttpClient.Version2\JOS.HttpClient.Version2.csproj", "{48893C87-44D1-4183-96CB-C1B17C31A2B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version2", "src\Versions\JOS.HttpClient.Version2\JOS.HttpClient.Version2.csproj", "{48893C87-44D1-4183-96CB-C1B17C31A2B1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version0", "src\versions\JOS.HttpClient.Version0\JOS.HttpClient.Version0.csproj", "{A9C46B0D-1F21-40E5-BD88-5FAC9BED54DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version0", "src\Versions\JOS.HttpClient.Version0\JOS.HttpClient.Version0.csproj", "{A9C46B0D-1F21-40E5-BD88-5FAC9BED54DB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version3", "src\versions\JOS.HttpClient.Version3\JOS.HttpClient.Version3.csproj", "{9A9AE667-90A8-459C-817B-18443E9B79D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version3", "src\Versions\JOS.HttpClient.Version3\JOS.HttpClient.Version3.csproj", "{9A9AE667-90A8-459C-817B-18443E9B79D1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.GitHubDummyApi", "src\JOS.HttpClient.GitHubDummyApi\JOS.HttpClient.GitHubDummyApi.csproj", "{49C8DE42-2315-45EE-A9EE-45656A2C6FD6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version4", "src\versions\JOS.HttpClient.Version4\JOS.HttpClient.Version4.csproj", "{61742904-3E93-4B6B-B406-BE122590CAC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version4", "src\Versions\JOS.HttpClient.Version4\JOS.HttpClient.Version4.csproj", "{61742904-3E93-4B6B-B406-BE122590CAC9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version5", "src\versions\JOS.HttpClient.Version5\JOS.HttpClient.Version5.csproj", "{632FD3A3-19EF-42FD-A991-EE59105E886A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version5", "src\Versions\JOS.HttpClient.Version5\JOS.HttpClient.Version5.csproj", "{632FD3A3-19EF-42FD-A991-EE59105E886A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version6", "src\versions\JOS.HttpClient.Version6\JOS.HttpClient.Version6.csproj", "{1C3CC2E0-241A-4E69-BB3C-753A57E40B30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version6", "src\Versions\JOS.HttpClient.Version6\JOS.HttpClient.Version6.csproj", "{1C3CC2E0-241A-4E69-BB3C-753A57E40B30}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versions", "Versions", "{BF222A47-DCF3-4270-BC74-6098F381070C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version7", "src\versions\JOS.HttpClient.Version7\JOS.HttpClient.Version7.csproj", "{D0CBDD4A-1045-4AE4-A76B-7355B3E531D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version7", "src\Versions\JOS.HttpClient.Version7\JOS.HttpClient.Version7.csproj", "{D0CBDD4A-1045-4AE4-A76B-7355B3E531D9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.HttpClient.Version8", "src\Versions\JOS.HttpClient.Version8\JOS.HttpClient.Version8.csproj", "{3CADA47A-05EB-4903-A738-A3E238202AC0}"
 EndProject
