@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 using JOSHttpClient.Common;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
@@ -19,7 +18,7 @@ namespace JOS.HttpClient.Web
         {
             return WebHost.CreateDefaultBuilder(args)
                 .UseKestrel(options => { options.AllowSynchronousIO = true; })
-                .ConfigureAppConfiguration((hostingContext, config) => {
+                .ConfigureAppConfiguration((_, config) => {
                     config.SetBasePath(Directory.GetCurrentDirectory());
                     config.AddUserSecrets<Startup>();
                     config.AddInMemoryCollection(

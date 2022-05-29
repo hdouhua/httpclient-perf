@@ -40,6 +40,8 @@ namespace JOS.HttpClient.Web
             services.AddVersion8();
             services.AddVersion9();
             services.AddVersion10();
+
+            services.AddResponseCompression();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -48,6 +50,8 @@ namespace JOS.HttpClient.Web
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseResponseCompression();
 
             app.UseRouting();
 
