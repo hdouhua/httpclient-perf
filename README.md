@@ -1,6 +1,9 @@
-# jos.httpclient
+# benchmark of httpclient
 
-https://josef.codes/you-are-probably-still-using-httpclient-wrong-and-it-is-destabilizing-your-software/
+please refer to 
+
+- [You're (probably still) using HttpClient wrong and it is destabilizing your software](https://josef.codes/you-are-probably-still-using-httpclient-wrong-and-it-is-destabilizing-your-software/)
+- [Using Streams with HttpClient to Improve Performance and Memory Usage](https://code-maze.com/using-streams-with-httpclient-to-improve-performance-and-memory-usage/)
 
 ## Benchmark instructions
 
@@ -27,6 +30,7 @@ Runtime=.NET Core 3.1  InvocationCount=50  UnrollFactor=1
 ```
 ### GetAllProjectsQuery
 #### 10 items
+
 ```
 |    Method |     Mean |     Error |    StdDev | Ratio | RatioSD | Gen 0 | Gen 1 | Gen 2 | Allocated |
 |---------- |---------:|----------:|----------:|------:|--------:|------:|------:|------:|----------:|
@@ -42,7 +46,9 @@ Runtime=.NET Core 3.1  InvocationCount=50  UnrollFactor=1
 |  Version9 | 4.349 ms | 0.0591 ms | 0.0524 ms |  0.98 |    0.02 |     - |     - |     - |  27.51 KB |
 | Version10 | 4.286 ms | 0.0772 ms | 0.0684 ms |  0.96 |    0.02 |     - |     - |     - |   6.27 KB |
 ```
+
 #### 100 items
+
 ```
 |    Method |      Mean |     Error |    StdDev |    Median | Ratio | RatioSD |   Gen 0 |   Gen 1 |   Gen 2 | Allocated |
 |---------- |----------:|----------:|----------:|----------:|------:|--------:|--------:|--------:|--------:|----------:|
@@ -74,7 +80,9 @@ Runtime=.NET Core 3.1  InvocationCount=50  UnrollFactor=1
 |  Version9 | 23.19 ms | 0.461 ms | 0.600 ms |  0.84 |    0.03 |  40.0000 |  20.0000 |        - |  237.55 KB |
 | Version10 | 21.52 ms | 0.430 ms | 0.460 ms |  0.78 |    0.02 | 480.0000 | 480.0000 | 480.0000 | 2029.17 KB |
 ```
+
 #### 10 000 items
+
 ```
 |    Method |     Mean |   Error |  StdDev | Ratio |     Gen 0 |     Gen 1 |     Gen 2 | Allocated |
 |---------- |---------:|--------:|--------:|------:|----------:|----------:|----------:|----------:|
@@ -94,6 +102,7 @@ Runtime=.NET Core 3.1  InvocationCount=50  UnrollFactor=1
 ### HttpClientBenchmark
 
 #### 10 items
+
 ```
 |    Method |     Mean |     Error |    StdDev | Ratio | RatioSD | Gen 0 | Gen 1 | Gen 2 | Allocated |
 |---------- |---------:|----------:|----------:|------:|--------:|------:|------:|------:|----------:|
@@ -109,7 +118,9 @@ Runtime=.NET Core 3.1  InvocationCount=50  UnrollFactor=1
 |  Version9 | 4.363 ms | 0.0812 ms | 0.0869 ms |  0.96 |    0.03 |     - |     - |     - |  26.84 KB |
 | Version10 | 4.334 ms | 0.0644 ms | 0.0602 ms |  0.95 |    0.02 |     - |     - |     - |   5.57 KB |
 ```
+
 #### 100 items
+
 ```
 |    Method |      Mean |     Error |    StdDev | Ratio | RatioSD |   Gen 0 |   Gen 1 |   Gen 2 | Allocated |
 |---------- |----------:|----------:|----------:|------:|--------:|--------:|--------:|--------:|----------:|
@@ -125,7 +136,9 @@ Runtime=.NET Core 3.1  InvocationCount=50  UnrollFactor=1
 |  Version9 |  9.456 ms | 0.1787 ms | 0.1986 ms |  0.91 |    0.03 |       - |       - |       - |   41.8 KB |
 | Version10 |  8.497 ms | 0.1672 ms | 0.1305 ms |  0.82 |    0.01 | 40.0000 | 40.0000 | 40.0000 | 139.03 KB |
 ```
+
 #### 1000 items
+
 ```
 |    Method |     Mean |    Error |   StdDev |   Median | Ratio | RatioSD |    Gen 0 |    Gen 1 |    Gen 2 |  Allocated |
 |---------- |---------:|---------:|---------:|---------:|------:|--------:|---------:|---------:|---------:|-----------:|
@@ -142,6 +155,7 @@ Runtime=.NET Core 3.1  InvocationCount=50  UnrollFactor=1
 | Version10 | 19.99 ms | 0.258 ms | 0.242 ms | 19.99 ms |  0.71 |    0.01 | 460.0000 | 460.0000 | 460.0000 | 1982.46 KB |
 ```
 #### 10 000 items
+
 ```
 |    Method |     Mean |   Error |  StdDev | Ratio |     Gen 0 |     Gen 1 |    Gen 2 | Allocated |
 |---------- |---------:|--------:|--------:|------:|----------:|----------:|---------:|----------:|
